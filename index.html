@@ -30,9 +30,19 @@
 
             <div class="info-content">
                 <div class="label">EMAIL</div>
-
                 <div class="value" id="emailText">
                     your-email@example.com
+                </div>
+            </div>
+        </div>
+
+        <div class="info-item">
+            <div class="icon">📍</div>
+
+            <div class="info-content">
+                <div class="label">ADDRESS</div>
+                <div class="value">
+                    대한민국
                 </div>
             </div>
         </div>
@@ -42,8 +52,7 @@
 
             <div class="info-content">
                 <div class="label">PHONE</div>
-
-                <div class="value">
+                <div class="value" id="phoneText">
                     010-1234-5678
                 </div>
             </div>
@@ -73,20 +82,25 @@
         <button
             type="button"
             class="github-button"
-            id="githubButton">
-
-            ● Github 보기
-
+            id="phoneCopyButton">
+            번호 복사
         </button>
 
     </div>
 
-    <div
-        id="copyMessage"
-        class="copy-message">
+    <div class="github-container">
 
-        이메일이 복사되었습니다.
+        <button
+            type="button"
+            class="github-button"
+            id="githubButton">
+            ● Github 보기
+        </button>
 
+    </div>
+
+    <div id="copyMessage" class="copy-message">
+        복사되었습니다.
     </div>
 
 </div>
