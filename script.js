@@ -38,7 +38,10 @@ phoneCopyButton.addEventListener("click", async () => {
 });
 
 githubButton.addEventListener("click", () => {
-    window.open("https://github.com/sang0-lee", "_blank");
+    window.open(
+        "https://github.com/sang0-lee",
+        "_blank"
+    );
 });
 
 function showCopyMessage(message) {
