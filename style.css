@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f4f6f9;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif;
+    padding:20px;
+}
+
+.card{
+    width:100%;
+    max-width:430px;
+    background:#ffffff;
+    border-radius:28px;
+    padding:40px 30px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+    border:1px solid #e5e7eb;
+}
+
+.profile-section{
+    text-align:center;
+}
+
+.profile-image{
+    width:140px;
+    height:140px;
+    margin:0 auto 24px;
+    border-radius:50%;
+    overflow:hidden;
+    border:4px solid #f1f5f9;
+    background:#eef2f7;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.profile-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.name{
+    font-size:34px;
+    font-weight:800;
+    color:#111827;
+    margin-bottom:8px;
+}
+
+.job{
+    font-size:17px;
+    color:#64748b;
+    margin-bottom:35px;
+}
+
+.info-list{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.info-item{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:18px;
+    border-radius:18px;
+    background:#f8fafc;
+    border:1px solid #e8edf3;
+    transition:.2s ease;
+}
+
+.info-item:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.05);
+}
+
+.icon{
+    width:52px;
+    height:52px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:14px;
+    background:#ffffff;
+    font-size:22px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.05);
+    flex-shrink:0;
+}
+
+.info-content{
+    flex:1;
+}
+
+.label{
+    font-size:12px;
+    color:#94a3b8;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-bottom:4px;
+}
+
+.value{
+    font-size:16px;
+    font-weight:600;
+    color:#1f2937;
+}
+
+.value a{
+    color:inherit;
+    text-decoration:none;
+}
+
+.value a:hover{
+    color:#2563eb;
+}
+
+@media(max-width:480px){
+    .card{
+        padding:30px 22px;
+    }
+
+    .profile-image{
+        width:120px;
+        height:120px;
+    }
+
+    .name{
+        font-size:28px;
+    }
+}
