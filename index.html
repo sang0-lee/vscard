@@ -14,7 +14,7 @@
 
     <div class="profile-section">
       <div class="profile-image">
-        <img src="./cat1.jpg" alt="프로필 이미지">
+        <img src="./cat1.jpg" alt="고양이 프로필 이미지">
       </div>
 
       <h1 class="name">이상영</h1>
@@ -27,11 +27,7 @@
         <div class="icon">✉️</div>
         <div class="info-content">
           <div class="label">Email</div>
-          <div class="value">
-            <a href="mailto:your-email@example.com">
-              your-email@example.com
-            </a>
-          </div>
+          <div class="value" id="emailText">your-email@example.com</div>
         </div>
       </div>
 
@@ -39,14 +35,24 @@
         <div class="icon">📞</div>
         <div class="info-content">
           <div class="label">Phone</div>
-          <div class="value">
-            <a href="tel:01012345678">
-              010-1234-5678
-            </a>
-          </div>
+          <div class="value">010-1234-5678</div>
         </div>
       </div>
 
+    </div>
+
+    <div class="button-group">
+      <button type="button" class="action-button" id="emailCopyButton">
+        이메일 보내기
+      </button>
+
+      <a href="tel:01012345678" class="action-button">
+        전화하기
+      </a>
+    </div>
+
+    <div class="copy-message" id="copyMessage">
+      이메일이 복사되었습니다.
     </div>
 
   </div>
