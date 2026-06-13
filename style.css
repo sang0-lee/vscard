@@ -134,6 +134,30 @@ body{
     box-shadow:0 8px 20px rgba(176,21,249,.2);
 }
 
+.github-container{
+    margin-top:16px;
+}
+
+.github-button{
+    width:100%;
+    padding:18px;
+    border-radius:18px;
+    border:1px solid #2a2a2a;
+    background:#1a1a1a;
+    color:#ffffff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.2s ease;
+}
+
+.github-button:hover{
+    transform:translateY(-2px);
+    border-color:#b015f9;
+    background:#1f1f1f;
+    box-shadow:0 8px 20px rgba(176,21,249,.2);
+}
+
 .copy-message{
     text-align:center;
     margin-top:16px;

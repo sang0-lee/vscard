@@ -1,61 +1,95 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>이상영 | 웹 명함</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이상영 | 웹 명함</title>
 
-  <link rel="stylesheet" href="./style.css">
-  <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
 
-  <div class="card">
+<div class="card">
 
     <div class="profile-section">
-      <div class="profile-image">
-        <img src="./cat1.jpg" alt="고양이 프로필 이미지">
-      </div>
 
-      <h1 class="name">이상영</h1>
-      <div class="job">Full Stack Developer</div>
+        <div class="profile-image">
+            <img src="./cat1.jpg" alt="고양이 프로필 이미지">
+        </div>
+
+        <h1 class="name">이상영</h1>
+        <div class="job">Full Stack Developer</div>
+
     </div>
 
     <div class="info-list">
 
-      <div class="info-item">
-        <div class="icon">✉️</div>
-        <div class="info-content">
-          <div class="label">Email</div>
-          <div class="value" id="emailText">your-email@example.com</div>
-        </div>
-      </div>
+        <div class="info-item">
+            <div class="icon">✉️</div>
 
-      <div class="info-item">
-        <div class="icon">📞</div>
-        <div class="info-content">
-          <div class="label">Phone</div>
-          <div class="value">010-1234-5678</div>
+            <div class="info-content">
+                <div class="label">EMAIL</div>
+
+                <div class="value" id="emailText">
+                    your-email@example.com
+                </div>
+            </div>
         </div>
-      </div>
+
+        <div class="info-item">
+            <div class="icon">📞</div>
+
+            <div class="info-content">
+                <div class="label">PHONE</div>
+
+                <div class="value">
+                    010-1234-5678
+                </div>
+            </div>
+        </div>
 
     </div>
 
     <div class="button-group">
-      <button type="button" class="action-button" id="emailCopyButton">
-        이메일 보내기
-      </button>
 
-      <a href="tel:01012345678" class="action-button">
-        전화하기
-      </a>
+        <button
+            type="button"
+            class="action-button"
+            id="emailCopyButton">
+            이메일 보내기
+        </button>
+
+        <a
+            href="tel:01012345678"
+            class="action-button">
+            전화하기
+        </a>
+
     </div>
 
-    <div class="copy-message" id="copyMessage">
-      이메일이 복사되었습니다.
+    <div class="github-container">
+
+        <button
+            type="button"
+            class="github-button"
+            id="githubButton">
+
+            ● Github 보기
+
+        </button>
+
     </div>
 
-  </div>
+    <div
+        id="copyMessage"
+        class="copy-message">
+
+        이메일이 복사되었습니다.
+
+    </div>
+
+</div>
 
 </body>
 </html>

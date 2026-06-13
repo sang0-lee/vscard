@@ -14,24 +14,41 @@ const emailButton = document.getElementById("emailCopyButton");
 const emailText = document.getElementById("emailText");
 const copyMessage = document.getElementById("copyMessage");
 
-emailButton.addEventListener("click", async () => {
+if (emailButton) {
+    emailButton.addEventListener("click", async () => {
 
-    try {
+        try {
 
-        await navigator.clipboard.writeText(
-            emailText.textContent.trim()
+            await navigator.clipboard.writeText(
+                emailText.textContent.trim()
+            );
+
+            copyMessage.classList.add("show");
+
+            setTimeout(() => {
+                copyMessage.classList.remove("show");
+            }, 2000);
+
+        } catch (error) {
+
+            alert("이메일 복사 실패");
+
+        }
+
+    });
+}
+
+const githubButton = document.getElementById("githubButton");
+
+if (githubButton) {
+
+    githubButton.addEventListener("click", () => {
+
+        window.open(
+            "https://github.com/sang0-lee",
+            "_blank"
         );
 
-        copyMessage.classList.add("show");
+    });
 
-        setTimeout(() => {
-            copyMessage.classList.remove("show");
-        }, 2000);
-
-    } catch (error) {
-
-        alert("이메일 복사 실패");
-
-    }
-
-});
+}
